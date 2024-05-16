@@ -3,35 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crud</title>
+    <title>Student Management System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <h1>Student Management</h1>
-
-    <form>
-        <input type="text" placeholder="enter roll no" id="roll_no">
-        <input type="text" placeholder="enter name" id="name">
-        <input type="text" placeholder="enter age" id="age">
-        <input type="text" placeholder="enter course" id="course">
-        <button onclick="addData()">add submit</button>
+    <h2>Student Management Form</h2>
+    <form class="student-form">
+        <input type="text" id="rollno" placeholder="Roll number">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="age" placeholder="Age">
+        <input type="text" id="course" placeholder="Course">
+        
+        <button id="add" onclick="addData()">Add student</button>
     </form>
-
-    <div class="container">
-        <table id="tab">
-            <tr>
-              <th>Roll no</th>
-              <th>Name</th>
-              <th>Age</th>
-              <th>course</th>
-            </tr>
-            <tbody id="data1">
-
-            </tbody>
-          </table>
-    </div>
-    <script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <table>
+        <thead>
+            <td>Roll Number</td>
+            <td>Name</td>
+            <td>Age</td>
+            <td>Course</td>
+            <td>Actions</td>
+        </thead>
+        <tbody id="student_list">
+            
+        </tbody>
+    </table>
     
+    <script src="app.js"></script>
 </body>
-</html>
+</html> 
