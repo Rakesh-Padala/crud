@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Student Management</h1>
+
+    <form>
+        <input type="text" placeholder="enter roll no" id="roll_no">
+        <input type="text" placeholder="enter name" id="name">
+        <input type="text" placeholder="enter age" id="age">
+        <input type="text" placeholder="enter course" id="course">
+        <button onclick="addData()">add submit</button>
+    </form>
+
+    <div class="container">
+        <table id="tab">
+            <tr>
+              <th>Roll no</th>
+              <th>Name</th>
+              <th>Age</th>
+              <th>course</th>
+            </tr>
+            <tbody id="data1">
+
+            </tbody>
+          </table>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+</body>
+</html>
